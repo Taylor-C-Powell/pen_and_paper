@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+dist/
+build/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Pen and Paper drawing files (user data, not source)
+*.pnp
+
+# Claude Code
+.claude/
