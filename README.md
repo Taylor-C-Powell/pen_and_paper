@@ -1,4 +1,4 @@
-# Pen and Paper
+# Pen and Paper v1.0.0
 
 A lightweight freehand drawing application built with Python and tkinter.
 

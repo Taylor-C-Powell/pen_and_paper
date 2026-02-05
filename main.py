@@ -3,6 +3,8 @@ from tkinter import colorchooser, filedialog, messagebox, simpledialog
 import json
 import os
 
+__version__ = "1.0.0"
+
 
 class DrawingCanvas(tk.Canvas):
     """White drawing surface with mouse bindings for freehand drawing/erasing."""
@@ -356,7 +358,7 @@ class PenAndPaperApp(tk.Tk):
 
     def __init__(self):
         super().__init__()
-        self.title("Pen and Paper")
+        self.title(f"Pen and Paper v{__version__}")
         self.geometry("800x600")
         self.configure(bg="#d9d9d9")
 
@@ -407,7 +409,7 @@ class PenAndPaperApp(tk.Tk):
     def _update_title(self):
         name = os.path.basename(self.current_file) if self.current_file else "Untitled"
         mod = " *" if self.modified else ""
-        self.title(f"{name}{mod} - Pen and Paper")
+        self.title(f"{name}{mod} - Pen and Paper v{__version__}")
 
     # --- Brush size ---
 
